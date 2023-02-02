@@ -1,0 +1,31 @@
+body {
+    margin: 0px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+  }
+  
+  .rpsgame {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  button {
+    width: 150px;
+    border-radius: 5px;
+  }
+  button:hover {
+    border-radius: 5px;
+    border: ridge;
+  }
+  
+  footer {
+    text-align: center;
+    background-color: grey;
+  }
