@@ -12,14 +12,29 @@
   <div class="content">
     <div class="rpsgame">
       <h1>Rock, Paper, Scissors</h1>
-      <button onclick="playGame('rock')">Rock</button>
-      <button onclick="playGame('paper')"">Paper</button>
-    <button onclick=" playGame('scissors')">Scissors</button>
       <p id="result"></p>
+      <div class="playerselections">
+        <label>Pick your option:</label>
+        <div id="rpsimg">
+          <div class="rpsimg">
+            <img src="resources/rock.png" onclick="playGame('rock');runType()">
+            <figcaption class="figcap">Rock</figcaption>
+          </div>
+          <div class="rpsimg">
+            <img src="resources/paper.png" onclick="playGame('paper');runType()" onclick="runType()">
+            <figcaption class="figcap">Paper</figcaption>
+          </div>
+          <div class="rpsimg">
+            <img src="resources/scissors.png" onclick=" playGame('scissors');runType()" onclick="runType()">
+            <figcaption class="figcap">Scissors</figcaption>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <footer>Designed by CandyModerna</footer>
-  <script src="app.js"></script>
+  <script src="script.js"></script>
+  <script src="animation.js"></script>
 </body>
 
 </html>
