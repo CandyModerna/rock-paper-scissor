@@ -1,31 +1,83 @@
 body {
-    margin: 0px;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-around;
+  margin: 0px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: space-between;
+  height: 100%;
+}
+
+.content {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  height: 500px;
+}
+
+.rpsgame {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-around;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+.playerselections {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: lightgrey;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+#rpsimg {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.rpsimg {
+  text-align: center;
+  padding: 10px;
+  transition: all 0.4s;
+}
+.rpsimg:hover {
+  transform: scale(1.2);
+  transition: all 0.4s;
+}
+
+.rpsimg:hover > .figcap {
+  animation: blinker 1.4s linear infinite;
+  transition: all 0.4s;
+}
+@keyframes blinker {
+  50% {
+    opacity: 0;
+    transition: all 0.4s;
   }
-  
-  .rpsgame {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  h1 {
-    text-align: center;
-  }
-  
-  button {
-    width: 150px;
-    border-radius: 5px;
-  }
-  button:hover {
-    border-radius: 5px;
-    border: ridge;
-  }
-  
-  footer {
-    text-align: center;
-    background-color: grey;
-  }
+}
+.rpsimg img {
+  height: 100px;
+  width: auto;
+}
+
+button {
+  width: 150px;
+  border-radius: 5px;
+}
+
+button:hover {
+  border-radius: 5px;
+  border: ridge;
+}
+
+
+footer {
+  display: flex;
+  background-color: grey;
+}
