@@ -29,9 +29,9 @@ function displayResult(result) {
   let players = capitalize(playerInput);
   let computers = capitalize(computerSelection);
   var resultMessage = `${result}! You chose ${players} and the computer chose  ${computers}.`;
-  document.getElementById("result").innerHTML = resultMessage; 
+  document.getElementById("result").innerHTML = resultMessage;
 }
 
 function capitalize(text) {
- return text.charAt(0).toUpperCase() + text.slice(1).toLowerCase();
+  return text.charAt(0).toUpperCase() + text.slice(1).toLowerCase();
 }
