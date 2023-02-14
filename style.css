@@ -76,6 +76,22 @@ button:hover {
   border: ridge;
 }
 
+.scores {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+#pscore, #cscore {
+  background-color: orangered;
+  border: 1px solid black;
+  text-align: center;
+  color: black;
+  margin: auto;
+  padding: 30px;
+}
+
 
 footer {
   display: flex;
