@@ -12,20 +12,27 @@
   <div class="content">
     <div class="rpsgame">
       <h1>Rock, Paper, Scissors</h1>
+      <div class=scores>
+        <h2>Player Score</h2>
+        <p id="pscore"></p>
+        <h2>Computer Score</h2>
+        <p id="cscore"></p>
+      </div>
+      <p id="roundwinner"></p>
       <p id="result"></p>
       <div class="playerselections">
         <label>Pick your option:</label>
         <div id="rpsimg">
           <div class="rpsimg">
-            <img src="resources/rock.png" onclick="playGame('rock');runType()">
+            <img src="resources/rock.png" onclick="playGame('rock');runType();">
             <figcaption class="figcap">Rock</figcaption>
           </div>
           <div class="rpsimg">
-            <img src="resources/paper.png" onclick="playGame('paper');runType()" onclick="runType()">
+            <img src="resources/paper.png" onclick="playGame('paper');runType()">
             <figcaption class="figcap">Paper</figcaption>
           </div>
           <div class="rpsimg">
-            <img src="resources/scissors.png" onclick=" playGame('scissors');runType()" onclick="runType()">
+            <img src="resources/scissors.png" onclick=" playGame('scissors');runType();">
             <figcaption class="figcap">Scissors</figcaption>
           </div>
         </div>
